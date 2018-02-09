@@ -1,0 +1,24 @@
+{
+  "name": "@sushi-ui/su-base",
+  "version": "1.0.0",
+  "description": "Base css",
+  "main": "lib/su-base.css",
+  "scripts": {
+    "dev": "postcss src/su-base.css -c postcss.config.js -d lib -w",
+    "build": "rm -rf lib && postcss src/su-base.css -c postcss.config.js -d lib"
+  },
+  "repository": "https://github.com/sushi-ui/su-dropdown.git",
+  "keywords": ["ui", "base", "css"],
+  "files": ["lib", "README.md"],
+  "author": "Rasmus Hallström",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "cssnano": "^3.10.0",
+    "cssnano-preset-advanced": "^4.0.0-rc.2",
+    "normalize.css": "^8.0.0",
+    "postcss": "^6.0.17",
+    "postcss-cli": "^5.0.0",
+    "postcss-import": "^11.0.0"
+  }
+}
